@@ -52,6 +52,8 @@ typedef enum {
 
 void initPortOutSet(uint8_t portNumber);
 void initPortOutClear(uint8_t portNumber);
+void initPortToggle(uint8_t portNumber);
 void initNRF52Port();
+void initComoPort();
 void initPort();
 void initPowerHold();

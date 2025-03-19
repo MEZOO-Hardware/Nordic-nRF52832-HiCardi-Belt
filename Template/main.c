@@ -14,7 +14,8 @@ void handerLowPowerConsumption()
 
 void initPeripherals()
 {
-		initNRF52Port();
+		// initNRF52Port();
+    initComoPort();
     initUART();
 		initSeggerRTT();
     initI2C();
@@ -44,10 +45,17 @@ int main()
   
     while (true)
     {
-        for (int i = 0; i < LEDS_NUMBER; i++)
-        {
-            bsp_board_led_invert(i);
-            nrf_delay_ms(100);
-        }
+				if(isPressedButton())
+				{
+						initPowerHold();
+						disableFlagButtonState();
+				}
+
+				if(nrf_gpio_pin_read(24)==1)
+				{
+						nrf_gpio_pin_toggle(17);
+						nrf_delay_ms(300);
+				}
+        
     } // while
 } // main

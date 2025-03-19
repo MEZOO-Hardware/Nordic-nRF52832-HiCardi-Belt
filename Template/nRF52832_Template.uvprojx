@@ -749,6 +749,16 @@
               <FileType>1</FileType>
               <FilePath>.\Project\sys\pinChangeInterrupt\pinChangeInterrupt.c</FilePath>
             </File>
+            <File>
+              <FileName>power.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Project\sys\power\power.c</FilePath>
+            </File>
+            <File>
+              <FileName>power.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Project\sys\power\power.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

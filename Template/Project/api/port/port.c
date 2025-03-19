@@ -51,7 +51,9 @@ void initNRF52Port()
 
 void initComoPort()
 {
-
+	  initPortIn(PORT13_Button1);
+    initPortOut(PORT17_LED1);
+    initPortOut(PORT18_LED2);
 }
 
 void initPowerHold()

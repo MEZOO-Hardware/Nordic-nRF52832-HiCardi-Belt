@@ -4,3 +4,4 @@
 
 #include "timeInterrupt\timeInterrupt.h"
 #include "pinChangeInterrupt\pinChangeInterrupt.h"
+#include "power\power.h"

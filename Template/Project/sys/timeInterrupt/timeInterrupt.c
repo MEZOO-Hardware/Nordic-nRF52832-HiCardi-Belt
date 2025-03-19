@@ -12,7 +12,7 @@ static uint16_t counter50Hz = 0;
 void handlerTimer1(nrf_timer_event_t event_type, void* p_context)
 {
 /* Timer 250Hz */
-
+		scanButton();
 /* Timer 50Hz */
 		counter50Hz++;
 		if(counter50Hz >= 5)
@@ -23,7 +23,7 @@ void handlerTimer1(nrf_timer_event_t event_type, void* p_context)
 
 void initTimerInterrupt()
 {
-    uint32_t time_ms = 4; 																														// Time Setting
+    uint32_t time_ms = 1; 																														// Time Setting
     uint32_t time_ticks;
     uint32_t err_code = NRF_SUCCESS;
 

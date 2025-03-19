@@ -2,6 +2,10 @@
 // Created by joey on 2024-06-18.
 //
 
+
+#ifndef NORDIC_NRF52832_TEMPLATE_PORT_H
+#define NORDIC_NRF52832_TEMPLATE_PORT_H
+
 #include "../sys/headerfile.h"
 
 typedef enum
@@ -57,3 +61,5 @@ void initNRF52Port();
 void initComoPort();
 void initPort();
 void initPowerHold();
+
+#endif //NORDIC_NRF52832_TEMPLATE_PORT_H

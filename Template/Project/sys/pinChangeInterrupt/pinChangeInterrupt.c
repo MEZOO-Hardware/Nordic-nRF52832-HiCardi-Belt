@@ -54,5 +54,5 @@ void initPinChangeInterrupt()
     err_code = nrf_drv_gpiote_init();
     APP_ERROR_CHECK(err_code);
 		
-		initRDYPinSensor();
+//		initRDYPinSensor();
 }
